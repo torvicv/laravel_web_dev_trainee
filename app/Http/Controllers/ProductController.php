@@ -17,7 +17,7 @@ class ProductController extends Controller
 
         $product = Product::create($validated);
 
-        return response()->json($product, 201);
+        return response()->json($product, 200);
     }
 
     public function show($id) {
